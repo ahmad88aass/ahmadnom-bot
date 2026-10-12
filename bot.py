@@ -51,5 +51,5 @@ def callback_query(call):
         notify_admin(f"📌 المستخدم @{username} (ID: {user_id}) طلب الرابط الثاني.")
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    print("Bot is running...")
+    bot.infinity_polling()
